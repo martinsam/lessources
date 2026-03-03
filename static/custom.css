@@ -1,0 +1,32 @@
+h1, h2, h3, h4, h5, h6{
+    color:#63ae12;
+}
+
+
+nav[role="navigation"] {
+  background-color: #210202;
+}
+
+.bg-black-60{
+    background-color: rgba(0,0,0,0);
+}
+
+
+.bg-black-60 h1{
+    font-weight: 400;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.bg-black-60 h2{
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+
+@media screen and (min-width: 60em) {
+
+    .bg-black-60 .pv6-l{
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+}

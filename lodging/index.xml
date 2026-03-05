@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hébergement on LesSources.bio</title>
-    <link>https://martinsam.github.io/lessourcesbio/lodging/</link>
+    <link>https://martinsam.github.io/lessources/lodging/</link>
     <description>Recent content in Hébergement on LesSources.bio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://martinsam.github.io/lessourcesbio/lodging/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://martinsam.github.io/lessources/lodging/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title># Camping</title>
-      <link>https://martinsam.github.io/lessourcesbio/lodging/camping/</link>
+      <link>https://martinsam.github.io/lessources/lodging/camping/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://martinsam.github.io/lessourcesbio/lodging/camping/</guid>
-      <description>&lt;h1 id=&#34;des-places-toutes-lannée&#34;&gt;Des places toutes l&amp;rsquo;année&lt;/h1&gt;&#xA;&lt;figure class=&#34;ma0 w-75&#34;&gt;&lt;img src=&#34;https://martinsam.github.io/lessourcesbio/images/camping.jpeg&#34;&#xA;    alt=&#34;Vue depuis les emplacements de camping&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Nous proposons des emplacements de camping pour tentes et camping-cars, dans un cadre calme et verdoyant, propice au repos et à la déconnexion.&lt;/p&gt;&#xA;&lt;p&gt;Pour plus de confort, notre gîte vous accueille dans une ambiance chaleureuse et authentique, à quelques pas seulement des jardins et des animaux.&lt;/p&gt;&#xA;&lt;p&gt;Que vous soyez de passage ou en séjour plus long, c’est l’occasion idéale de découvrir la ferme autrement, au rythme des saisons et de la permaculture 🌾✨&lt;/p&gt;</description>
+      <guid>https://martinsam.github.io/lessources/lodging/camping/</guid>
+      <description>&lt;h1 id=&#34;des-places-toutes-lannée&#34;&gt;Des places toutes l&amp;rsquo;année&lt;/h1&gt;&#xA;&lt;figure class=&#34;ma0 w-75&#34;&gt;&lt;img src=&#34;https://martinsam.github.io/lessources/images/camping.jpeg&#34;&#xA;    alt=&#34;Vue depuis les emplacements de camping&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Nous proposons des emplacements de camping pour tentes et camping-cars, dans un cadre calme et verdoyant, propice au repos et à la déconnexion.&lt;/p&gt;&#xA;&lt;p&gt;Pour plus de confort, notre gîte vous accueille dans une ambiance chaleureuse et authentique, à quelques pas seulement des jardins et des animaux.&lt;/p&gt;&#xA;&lt;p&gt;Que vous soyez de passage ou en séjour plus long, c’est l’occasion idéale de découvrir la ferme autrement, au rythme des saisons et de la permaculture 🌾✨&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hébergement</title>
-      <link>https://martinsam.github.io/lessourcesbio/lodging/gite/</link>
+      <link>https://martinsam.github.io/lessources/lodging/gite/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://martinsam.github.io/lessourcesbio/lodging/gite/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;https://martinsam.github.io/lessourcesbio/images/camping.jpeg&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Vue, emplacement des places de camping&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h1 id=&#34;-gîte&#34;&gt;🌿 Gîte&lt;/h1&gt;&#xA;&lt;p&gt;Coucu c&amp;rsquo;est le gite&lt;/p&gt;</description>
+      <guid>https://martinsam.github.io/lessources/lodging/gite/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://martinsam.github.io/lessources/images/camping.jpeg&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Vue, emplacement des places de camping&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h1 id=&#34;-gîte&#34;&gt;🌿 Gîte&lt;/h1&gt;&#xA;&lt;p&gt;Coucu c&amp;rsquo;est le gite&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

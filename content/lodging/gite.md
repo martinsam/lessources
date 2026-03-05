@@ -5,5 +5,8 @@ featured_image: '/images/camping.jpeg'
 ---
 {{< figure src="/images/camping.jpeg" title="Vue, emplacement des places de camping" >}}
 
-Venez vivre une parenthèse au cœur de la nature, au plus près de la vie de la ferme.
 
+# 🌿 Gîte
+
+
+Coucu c'est le gite

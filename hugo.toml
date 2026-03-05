@@ -1,4 +1,4 @@
-baseURL = 'https://github.com/martinsam/lessources-bio'
+baseURL = 'https://martinsam.github.io/lessourcesbio'
 languageCode = 'en-us'
 title = 'LesSources.bio'
 theme = 'ananke'

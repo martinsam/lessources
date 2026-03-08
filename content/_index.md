@@ -4,13 +4,27 @@ featured_image: '/images/intro.jpg'
 description: "« 10 ans de nature, d'essais et de partage. »"
 ---
 
-# Notre impact écologique en force positive ?
+# Notre impact écologique
+
+
+## 7.5 hectares sans chimie de synthèse
+
+{{< figure src="images/brouette.jpeg" title="Brouette qui se repose" size="300x" >}}
 
 Nous avons osé nous installer sur 7,5 hectares de terre et les cultiver principalement avec l’aide de nos animaux, des plantes et de nos propres mains. Depuis 2016, dans la Creuse, nous sommes une exploitation familiale, une petite ferme alternative qui produit de manière traditionnelle, sans recours à la chimie.
 
 Nous avons fait le choix d’une agriculture respectueuse des sols, du vivant et des saisons. Ici, chaque parcelle est pensée comme un écosystème : les haies protègent les cultures, les arbres offrent ombre et biodiversité, les animaux participent naturellement à la fertilité des terres. Rien n’est laissé au hasard, mais tout est fait avec patience.
 
+## Biodiversité et agradation des sols
+
+{{< figure src="images/plan_aerien.jpg" title="Vue aérienne" size="600x" >}}
+
 Nous cultivons en suivant les rythmes naturels, en favorisant la diversité plutôt que la monoculture, la qualité plutôt que la quantité. Nos pratiques s’inspirent du bon sens paysan d’autrefois, enrichi par les connaissances actuelles en agroécologie. Nous cherchons à régénérer la terre plutôt qu’à l’épuiser, à transmettre un sol plus vivant que celui que nous avons reçu.
+
+
+## Comprendre le vivant
+
+{{< figure src="images/cochons.jpeg" title="3 petites cochons" size="600x" >}}
 
 Notre ferme est aussi un lieu d’apprentissage et de partage. Nous accueillons celles et ceux qui souhaitent comprendre d’où vient leur nourriture, renouer avec le cycle des saisons, ou simplement découvrir une autre façon de produire et de consommer.
 

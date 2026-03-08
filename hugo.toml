@@ -1,4 +1,4 @@
-baseURL = 'https://martinsam.github.io/lessourcesbio'
+baseURL = 'https://martinsam.github.io/lessources/'
 languageCode = 'en-us'
 title = 'LesSources.bio'
 theme = 'ananke'
@@ -37,7 +37,7 @@ url = "/news/"
 weight = 1
 
 [[menu.main]]
-name = "Vente à la ferme"
+name = "Boutique"
 url = "/shop/"
 weight = 2
 

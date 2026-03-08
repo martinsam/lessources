@@ -1,8 +1,41 @@
 ---
-title: "Vente à la ferme"
-description: "A few years ago, while visiting or, rather, rummaging about Notre-Dame, the author of this book found, in an obscure nook of one of the towers, the following word, engraved by hand upon the wall: —ANANKE."
-featured_image: '/images/Victor_Hugo-Hunchback.jpg'
+title: "Boutique"
+description: "Vente directe à la ferme pour des légumes frais, rustiques et locaux. Pas de monoculture : chaque parcelle offre sa diversité."
+featured_image: '/images/legumes.jpeg'
 ---
-{{< figure src="/images/Victor_Hugo-Hunchback.jpg" title="Illustration from Victor Hugo et son temps (1881)" >}}
 
-_The Hunchback of Notre-Dame_ (French: _Notre-Dame de Paris_) is a French Romantic/Gothic novel by Victor Hugo, published in 1831. The original French title refers to Notre Dame Cathedral, on which the story is centered. English translator Frederic Shoberl named the novel The Hunchback of Notre Dame in 1833 because at the time, Gothic novels were more popular than Romance novels in England. The story is set in Paris, France in the Late Middle Ages, during the reign of Louis XI.
+
+
+# Horaires d'ouverture – Produits – Tarifs – Vente de plantes
+
+## Horaires d'ouverture
+
+Notre boutique à la ferme est ouverte du **lundi au samedi de 10h à 20h.**
+
+Nous récoltons deux fois par semaine. La boutique est entièrement réapprovisionnée **tous les mardis et samedis.**
+
+## Pain levain au feux de bois
+
+{{< figure src="/images/pain.jpg" title="Des petits pains" size="600x" >}}
+
+
+**Le vendredi soir à partir de 18h et le samedi toute la journée,**  nous proposons également du pain au levain frais et d'autres viennoiseries cuites dans notre four à pain.
+
+Si certains produits ne sont pas disponibles en dehors de ces jours, nous serons ravis de récolter des produits frais pour vous.
+
+
+## Herbes aromatiques et légumes feuilles sur demande
+
+{{< figure src="/images/feuille.png" title="Fleurs" size="500x" >}}
+
+Nous coupons également avec plaisir des légumes-feuilles, des salades et des herbes aromatiques sur demande.
+
+Nous acceptons vos précommandes et pouvons également vous servir sur rendez-vous.
+
+Produits
+
+Notre sélection est variée !
+
+Nous privilégions les légumes de toutes sortes. Nous cultivons de préférence des variétés anciennes, rustiques et non hybrides, riches en saveurs. Notre sélection est saisonnière et évolue constamment.
+
+La diversité est essentielle pour nous ! Au jardin comme dans votre assiette…

@@ -1,0 +1,20 @@
+{{ $src := .Get "src" }}
+{{ $img := resources.Get $src }}
+
+{{ if not $img }}
+  ERROR: image {{ $src }} not found in assets
+{{ else }}
+
+{{ $size := .Get "size" | default "800x" }}
+{{ $resized := $img.Resize $size }}
+
+
+<figure>
+  <img src="{{ $resized.RelPermalink }}"
+       width="{{ $resized.Width }}"
+       height="{{ $resized.Height }}"
+       alt="{{ .Get "title" }}">
+  <figcaption>{{ .Get "title" }}</figcaption>
+</figure>
+
+{{ end }}

@@ -11,6 +11,7 @@ featured_image: '/images/camping.jpeg'
   src="/images/camping.jpeg"
   alt="Vue depuis les emplacements de camping"
   class="ma0 w-75"
+  width="800"
 >}}
 
 
@@ -20,3 +21,10 @@ Nous proposons des emplacements de camping pour tentes et camping-cars, dans un 
 Pour plus de confort, notre gîte vous accueille dans une ambiance chaleureuse et authentique, à quelques pas seulement des jardins et des animaux.
 
 Que vous soyez de passage ou en séjour plus long, c’est l’occasion idéale de découvrir la ferme autrement, au rythme des saisons et de la permaculture 🌾✨
+
+
+
+{{< figure src="images/campouz.jpeg" title="Vue, emplacement des places de camping" size="800x" >}}
+
+
+

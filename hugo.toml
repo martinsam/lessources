@@ -1,59 +1,45 @@
-baseURL = 'https://martinsam.github.io/lessources/'
-languageCode = 'en-us'
-title = 'LesSources.bio'
-theme = 'ananke'
+# Sample workflow for building and deploying a Hugo site to GitHub Pages
+name: Deploy Hugo site to Pages
 
-disqusShortname = "ananke-demo"
-MetaDataFormat = "yaml"
-DefaultContentLanguage = "en"
-Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
-googleAnalytics = ""
-enableRobotsTXT = true
+on:
+  push:
+    branches: ["master"]
+  workflow_dispatch:
 
-[sitemap]
-  changefreq = "monthly"
-  priority = 0.5
-  filename = "sitemap.xml"
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-[params]
-  description = "The last theme you'll ever need. Maybe."
-  faceboook = ""
-  twitter = "https://twitter.com/GoHugoIO"
-  instagram = ""
-  youtube = ""
-  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
-  background_color_class = "bg-black"
-  featured_image = "/images/intro.jpg"
-  custom_css = ["custom.css"]
-  site_logo = "farmer_white.png"
-  favicon = "farmer.png"
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
+defaults:
+  run:
+    shell: bash
 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          HUGO_VERSION=$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep '"tag_name"' | sed 's/.*"v\([^"]*\)".*/\1/')
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
-# SectionPagesMenu = "main"
-[[menu.main]]
-name = "Actualités"
-url = "/news/"
-weight = 1
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
 
-[[menu.main]]
-name = "Boutique"
-url = "/shop/"
-weight = 2
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
 
-[[menu.main]]
-name = "Hébergement"
-url = "/lodging/"
-weight = 3
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
 
-[[menu.main]]
-name = "Pizza"
-url = "/pizza/"
-weight = 4
-
-
-[[menu.main]]
-name = "Contact"
-url = "/contact/"
-weight = 5
-
+      - name: Install Node.js dependencies
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"

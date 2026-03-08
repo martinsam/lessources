@@ -14,8 +14,6 @@ Réservation obligatoire au +33 6 43 70 35 97
 
 <!-- {{< figure src="images/pizza_plat.jpeg" title="Pizza et accompagnement du jardin" size="300x" >}} -->
 
-
-
  
 Installez-vous confortablement sur notre terrasse et laissez-vous tenter par notre menu complet (sur réservation uniquement) :
 

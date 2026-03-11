@@ -1,0 +1,37 @@
+{{ $src := .Get "src" }}
+{{ $img := resources.Get $src }}
+
+{{ if not $img }}
+  ERROR: image {{ $src }} not found in assets
+{{ else }}
+
+{{ $alt   := .Get "title" }}
+{{ $sizes := .Get "sizes" | default "(max-width: 600px) 100vw, (max-width: 1200px) 800px, 1200px" }}
+
+{{ $w400  := $img.Resize "400x webp q70" }}
+{{ $w800  := $img.Resize "800x webp q70" }}
+{{ $w1200 := $img.Resize "1200x webp q70" }}
+
+{{ $fallback := $img.Resize "800x q70" }}
+
+<figure>
+  <picture>
+    <source
+      srcset="{{ $w400.RelPermalink }} 400w,
+              {{ $w800.RelPermalink }} 800w,
+              {{ $w1200.RelPermalink }} 1200w"
+      sizes="{{ $sizes }}"
+      type="image/webp">
+    <img
+      src="{{ $fallback.RelPermalink }}"
+      width="{{ $w800.Width }}"
+      height="{{ $w800.Height }}"
+      style="height: auto;"
+      loading="lazy"
+      decoding="async"
+      alt="{{ $alt }}">
+  </picture>
+  {{ with $alt }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>
+
+{{ end }}

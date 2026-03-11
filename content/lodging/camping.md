@@ -7,14 +7,6 @@ featured_image: '/images/camping.jpeg'
 # Des places toutes l'année
 
 
-{{< figure
-  src="/images/camping.jpeg"
-  alt="Vue depuis les emplacements de camping"
-  class="ma0 w-75"
-  width="800"
->}}
-
-
 
 Nous proposons des emplacements de camping pour tentes et camping-cars, dans un cadre calme et verdoyant, propice au repos et à la déconnexion.
 
@@ -27,4 +19,6 @@ Que vous soyez de passage ou en séjour plus long, c’est l’occasion idéale 
 {{< figure src="images/campouz.jpeg" title="Vue, emplacement des places de camping" size="800x" >}}
 
 
+----- Hello
 
+{{< image src="images/campouz.jpeg" title="Vue, emplacement des places de camping" >}}

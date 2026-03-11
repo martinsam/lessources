@@ -8,11 +8,11 @@
 {{ $size := .Get "size" | default "800x" }}
 {{ $resized := $img.Resize $size }}
 
-
 <figure>
   <img src="{{ $resized.RelPermalink }}"
        width="{{ $resized.Width }}"
        height="{{ $resized.Height }}"
+       style="height: auto;"
        alt="{{ .Get "title" }}">
   <figcaption>{{ .Get "title" }}</figcaption>
 </figure>

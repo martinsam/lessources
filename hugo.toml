@@ -1,11 +1,29 @@
 baseURL = 'https://martinsam.github.io/lessources/'
-languageCode = 'en-us'
+languageCode = 'fr'
 title = 'LesSources.bio'
 theme = 'ananke'
 
-disqusShortname = "ananke-demo"
+
+defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = true
+
+[languages]
+
+  [languages.fr]
+    languageName = "Français"
+    weight = 1
+
+  [languages.en]
+    languageName = "English"
+    weight = 2
+
+  [languages.de]
+    languageName = "Deutch"
+    weight = 3
+
+#disqusShortname = "ananke-demo"
 MetaDataFormat = "yaml"
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "fr"
 Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
 googleAnalytics = ""
 enableRobotsTXT = true
@@ -33,27 +51,27 @@ enableRobotsTXT = true
 # SectionPagesMenu = "main"
 [[menu.main]]
 name = "Actualités"
-url = "/news/"
+url = "news/"
 weight = 1
 
 [[menu.main]]
 name = "Boutique"
-url = "/shop/"
+url = "shop/"
 weight = 2
 
 [[menu.main]]
 name = "Hébergement"
-url = "/lodging/"
+url = "lodging/"
 weight = 3
 
 [[menu.main]]
 name = "Pizza"
-url = "/pizza/"
+url = "pizza/"
 weight = 4
 
 
 [[menu.main]]
 name = "Contact"
-url = "/contact/"
+url = "contact/"
 weight = 5
 

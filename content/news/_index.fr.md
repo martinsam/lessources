@@ -1,5 +1,5 @@
 ---
-title: "Actualités"
+title: "Evenements"
 date: 2017-03-02T12:00:00-05:00
 ---
 Bienvenue dans la rubrique Actualités & Événements de notre ferme permacole 🌱

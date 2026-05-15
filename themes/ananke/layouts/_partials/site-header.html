@@ -21,7 +21,7 @@
       {{ range $i, $img := $images }}
         <div
           class="ananke-slide"
-          style="background-image: url('{{ $img | absURL }}'); animation-delay: -{{ sub $total (mul $i $step) }}s; animation-duration: {{ $total }}s;"
+          style="background-image: url('{{ $img | relURL }}'); animation-delay: -{{ sub $total (mul $i $step) }}s; animation-duration: {{ $total }}s;"
         ></div>
       {{ end }}
     </div>

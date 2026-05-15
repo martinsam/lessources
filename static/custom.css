@@ -38,3 +38,80 @@ nav[role="navigation"] {
 }
 
 
+/* ============================================================
+   Slider header
+   ============================================================ */
+
+.ananke-slider-header {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+
+/* Track — stacks all slides on top of each other */
+.ananke-slider {
+  position: absolute;
+  inset: 0;
+}
+
+/* Each slide
+   - opacity starts at 1 thanks to a negative animation-delay
+     so the first image is visible immediately (no white flash)
+   - animation-duration is set inline by Hugo: count × 5 s       */
+.ananke-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center top;
+  opacity: 0;
+  animation: anankeSlide linear infinite;
+}
+
+/* Visible for ~80 % of its slot, cross-fades over the remaining 20 %
+   With a 5 s step:  hold ≈ 4 s, fade ≈ 1 s
+   Keyframe percentages are expressed relative to ONE full cycle
+   (all slides), so we use the per-slide fraction:
+     hold end  = (step − fade) / step  →  4/5 = 80 %  of the slot
+     fade end  = step / step           → 100 % of the slot
+   Because the keyframe only describes one slide's share of the
+   cycle, we keep it simple at 0 → 80 → 100 and let the delay
+   stagger each slide into place.                                 */
+@keyframes anankeSlide {
+  0%   { opacity: 1; }
+  80%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Overlay keeps nav + title readable over any image */
+.ananke-slider-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* Dot indicators */
+.ananke-slider-dots {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.ananke-slider-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  animation: anankeDot linear infinite;
+}
+
+@keyframes anankeDot {
+  0%   { background: rgba(255, 255, 255, 0.9); }
+  80%  { background: rgba(255, 255, 255, 0.9); }
+  100% { background: rgba(255, 255, 255, 0.35); }
+}
+

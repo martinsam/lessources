@@ -1,6 +1,9 @@
 ---
 title: "Ferme en permaculture, 100% autonome"
-featured_image: '/images/intro.jpg'
+featured_image:
+  - "/images/intro.jpg"
+  - "/images/camping.jpeg"
+  - "/images/pizza_plat.jpeg"
 description: "« 10 ans de nature, d'essais et de partage. »"
 ---
 

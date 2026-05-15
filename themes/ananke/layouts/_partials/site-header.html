@@ -1,11 +1,33 @@
-{{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
-{{ if $featured_image }}
-  {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
-  {{ $featured_image_class := site.Params.featured_image_class | compare.Default "cover bg-top" }}
-  <header class="{{ $featured_image_class }}" style="background-image: url('{{ $featured_image }}');">
-    {{ $cover_dimming_class := site.Params.cover_dimming_class | compare.Default "bg-black-60" }}
-    <div class="{{ $cover_dimming_class }}">
-      {{ partials.Include "site-navigation.html" .}}
+{{ $images := slice }}
+{{ if reflect.IsSlice .Params.featured_image }}
+  {{ $images = .Params.featured_image }}
+{{ else if .Params.featured_image }}
+  {{ $images = slice .Params.featured_image }}
+{{ else }}
+  {{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
+  {{ if $featured_image }}
+    {{ $images = slice $featured_image }}
+  {{ end }}
+{{ end }}
+
+{{ if $images }}
+  {{ $cover_dimming_class := site.Params.cover_dimming_class | compare.Default "bg-black-60" }}
+  {{ $count := len $images }}
+  {{ $step := 5 }}
+  {{ $total := mul $count $step }}
+
+  <header class="ananke-slider-header">
+    <div class="ananke-slider">
+      {{ range $i, $img := $images }}
+        <div
+          class="ananke-slide"
+          style="background-image: url('{{ $img | absURL }}'); animation-delay: -{{ sub $total (mul $i $step) }}s; animation-duration: {{ $total }}s;"
+        ></div>
+      {{ end }}
+    </div>
+
+    <div class="ananke-slider-overlay {{ $cover_dimming_class }}">
+      {{ partials.Include "site-navigation.html" . }}
       <div class="tc-l pv4 pv6-l ph3 ph4-ns">
         <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
           {{ .Title | compare.Default .Site.Title }}
@@ -17,7 +39,14 @@
         {{ end }}
       </div>
     </div>
+
+    <div class="ananke-slider-dots">
+      {{ range $i, $_ := $images }}
+        <div class="ananke-slider-dot" style="animation-delay: -{{ sub $total (mul $i $step) }}s; animation-duration: {{ $total }}s;"></div>
+      {{ end }}
+    </div>
   </header>
+
 {{ else }}
   <header>
     <div class="pb3-m pb6-l {{ .Site.Params.background_color_class | compare.Default "bg-black" }}">

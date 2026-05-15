@@ -4,26 +4,8 @@ title = 'LesSources.bio'
 theme = 'ananke'
 
 
-defaultContentLanguage = "fr"
-defaultContentLanguageInSubdir = true
-
-[languages]
-
-  [languages.fr]
-    languageName = "Français"
-    weight = 1
-
-  [languages.en]
-    languageName = "English"
-    weight = 2
-
-  [languages.de]
-    languageName = "Deutch"
-    weight = 3
-
 #disqusShortname = "ananke-demo"
 MetaDataFormat = "yaml"
-DefaultContentLanguage = "fr"
 Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
 googleAnalytics = ""
 enableRobotsTXT = true
@@ -47,31 +29,54 @@ enableRobotsTXT = true
   favicon = "farmer.png"
 
 
+defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = false
 
-# SectionPagesMenu = "main"
+[languages]
+
+  [languages.fr]
+    languageName = "Français"
+    weight = 1
+
+  [languages.en]
+    languageName = "English"
+    weight = 2
+
+  [languages.de]
+    languageName = "Deutsch"
+    weight = 3
+
+
+# MENU GLOBAL
+# Hugo adaptera automatiquement les liens selon la langue active
+# grâce à pageRef.
+
 [[menu.main]]
+identifier = "news"
 name = "Actualités"
-url = "news/"
+pageRef = "/news"
 weight = 1
 
 [[menu.main]]
+identifier = "shop"
 name = "Boutique"
-url = "shop/"
+pageRef = "/shop"
 weight = 2
 
 [[menu.main]]
+identifier = "lodging"
 name = "Hébergement"
-url = "lodging/"
+pageRef = "/lodging"
 weight = 3
 
 [[menu.main]]
+identifier = "pizza"
 name = "Pizza"
-url = "pizza/"
+pageRef = "/pizza"
 weight = 4
 
-
 [[menu.main]]
+identifier = "contact"
 name = "Contact"
-url = "contact/"
+pageRef = "/contact"
 weight = 5
-

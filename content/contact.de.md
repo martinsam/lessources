@@ -8,11 +8,10 @@ type: page
 ---
 
 
-VERSION EN
+VERSION DE
 
-This is an example of a custom shortcode that you can put right into your content. You will need to add a form action to the the shortcode to make it work. Check out [Formspree](https://formspree.io/) for a simple, free form service.
+Dies ist ein Beispiel für einen benutzerdefinierten Shortcode, den Sie direkt in Ihren Inhalt einfügen können.
+Damit er funktioniert, müssen Sie dem Shortcode eine Formularaktion (form action) hinzufügen.
+Schauen Sie sich Formspree an – ein einfacher und kostenloser Formularservice.
 
 {{< form-contact action="http://formspree.io/your@email.com"  >}}
-
-
-HELLO
